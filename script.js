@@ -1,15 +1,16 @@
 var body = document.body;
-var duration = 1250;
+var duration = 700;
 
 function pagenext(pagename)
 {
     console.log("Page Next");
-    fadeOut(body, duration);
-    window.location =  pagename;
+    fadeOut(body, duration-500);
 
     setTimeout(function(){
         window.location =  pagename;
-    }, duration);
+    }, duration-500);
+
+    clearTimeout()
 }
 
 //https://stackoverflow.com/questions/23244338/pure-javascript-fade-in-function
