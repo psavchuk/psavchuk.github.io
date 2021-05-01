@@ -1,5 +1,5 @@
 var body = document.body;
-var duration = 750;
+var duration = 1250;
 
 function pagenext(pagename)
 {
