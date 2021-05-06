@@ -13,6 +13,20 @@ function pagenext(pagename)
     clearTimeout()
 }
 
+function showModal(elname)
+{
+    let el = document.getElementById("elname");
+
+    el.style.display = "block";
+}
+
+function closeModal(elname)
+{
+    let el = document.getElementById("elname");
+
+    el.style.display = "none";
+}
+
 //https://stackoverflow.com/questions/23244338/pure-javascript-fade-in-function
 function fadeIn(el, time) {
     el.style.opacity = 0;
