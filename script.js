@@ -39,7 +39,6 @@ function fadeIn(el, time) {
       if (+el.style.opacity < 1) {
         (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
       }
-      console.log("Page In");
     };
   
     tick();
@@ -56,7 +55,6 @@ function fadeOut(el, time) {
         if (+el.style.opacity > 0) {
         (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
         }
-        console.log("Page Out");
     };
 
     tick();
