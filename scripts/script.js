@@ -3,14 +3,21 @@ var duration = 700;
 
 function pagenext(pagename)
 {
-    console.log("Page Next");
-    fadeOut(body, duration-500);
+    if(window.location != pagename)
+    {
+        console.log("Page Next");
+        fadeOut(body, duration-500);
+        
+        
 
-    setTimeout(function(){
-        window.location =  pagename;
-    }, duration-500);
+        setTimeout(function(){
+            window.location =  pagename;
+        }, duration-500);
+        
+        body.style.opacity = 1;
 
-    clearTimeout()
+        clearTimeout()
+    }
 }
 
 function showModal(elname)
@@ -33,6 +40,17 @@ function closeModal(elname)
         el.style.display = "none";
     }, 250);
 
+}
+
+function scrollWindow(distance)
+{
+    var scrollOptions = {
+        left: 0,
+        top: distance,
+        behavior: 'smooth'
+      }
+
+    window.scroll(scrollOptions);
 }
 
 //https://stackoverflow.com/questions/23244338/pure-javascript-fade-in-function
@@ -67,5 +85,10 @@ function fadeOut(el, time) {
 
     tick();
 }
+
+window.onpageshow = function(){fadeIn(document.body, duration);
+    console.log("load");};
+
+//window.addEventListener('pageshow', fadeIn(document.body, duration));
 
 window.onload = fadeIn(body, duration);
