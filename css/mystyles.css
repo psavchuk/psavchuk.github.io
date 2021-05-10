@@ -262,7 +262,7 @@ th {
     text-align: inherit; }
 
 html {
-  background-color: white;
+  background-color: whitesmoke;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -379,7 +379,7 @@ table th {
 
 /* Bulma Elements */
 .box {
-  background-color: white;
+  background-color: white !important;
   border-radius: 6px;
   box-shadow: none;
   color: #4a4a4a;
@@ -7758,27 +7758,52 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-body {
-  background-color: whitesmoke; }
-
 .nextpage {
   opacity: 0.2; }
   .nextpage:hover {
     opacity: 0.5; }
 
-.box .banner img {
-  border-radius: 6px; }
+.box {
+  background-color: white !important; }
+  .box .banner img {
+    border-radius: 6px; }
+  .box .profilepicempty {
+    margin: -64px 0 0 32px; }
+    .box .profilepicempty img {
+      height: 128px;
+      padding: 1rem;
+      background-color: whitesmoke;
+      border-style: solid;
+      border-width: 3px;
+      border-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .box .profilepic {
+    margin: -64px 0 0 32px;
+    width: 128px;
+    height: 128px; }
+    .box .profilepic img {
+      height: 128px;
+      width: 128px;
+      background-color: whitesmoke;
+      border-style: solid;
+      border-width: 3px;
+      border-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .box .content {
+    padding: 1.25rem; }
 
-.box .profilepicempty {
-  margin: -64px 0 0 32px; }
-  .box .profilepicempty img {
-    height: 128px;
-    padding: 1rem;
-    background-color: whitesmoke;
-    border-style: solid;
-    border-width: 3px;
-    border-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s; }
 
-.box .content {
-  padding: 1.25rem; }
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: gray; }

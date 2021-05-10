@@ -15,16 +15,24 @@ function pagenext(pagename)
 
 function showModal(elname)
 {
-    let el = document.getElementById("elname");
+    let el = document.getElementById(elname);
 
     el.style.display = "block";
+
+    fadeIn(el, 500);
+    
 }
 
 function closeModal(elname)
 {
-    let el = document.getElementById("elname");
+    let el = document.getElementById(elname);
 
-    el.style.display = "none";
+    fadeOut(el, 200);
+
+    setTimeout(function(){
+        el.style.display = "none";
+    }, 250);
+
 }
 
 //https://stackoverflow.com/questions/23244338/pure-javascript-fade-in-function
