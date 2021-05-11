@@ -7776,7 +7776,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   align-items: stretch;
   display: flex;
   padding: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  background-color: #504D8F; }
 
 .navbar-menu {
   flex-grow: 1;
