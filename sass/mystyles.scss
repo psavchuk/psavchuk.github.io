@@ -1,9 +1,11 @@
 @charset "utf-8";
 
+$primary: #504D8F;
+
 $box-padding: 0;
 $box-shadow: none;
-$box-background-color: white !important;
-$body-background-color: whitesmoke;
+//$box-background-color: #AB9FE0 !important;
+$body-background-color: #FFF8D6;
 
 @import "../node_modules/bulma/bulma.sass";
 
@@ -17,7 +19,12 @@ $body-background-color: whitesmoke;
 
 .navbar-item {
     display: flex;
-  }
+    color:white !important;
+
+    .selected {
+        background-color: black !important;
+    }
+}
   
   .navbar,
   .navbar-menu,
