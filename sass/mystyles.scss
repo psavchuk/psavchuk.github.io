@@ -7,20 +7,39 @@ $body-background-color: whitesmoke;
 
 @import "../node_modules/bulma/bulma.sass";
 
-
-
-body {
-    //background-color: whitesmoke;
-}
-
-
-
 .nextpage {
     opacity: 0.2;
 
     &:hover {
         opacity: 0.5;
     }
+}
+
+.navbar-item {
+    display: flex;
+  }
+  
+  .navbar,
+  .navbar-menu,
+  .navbar-start,
+  .navbar-end {
+    align-items: stretch;
+    display: flex;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .navbar-menu{
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .navbar-start{
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+  .navbar-end{
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .box {
